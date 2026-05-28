@@ -27,7 +27,7 @@ const Products = () => {
         const data = await getProducts(category);
         setProducts(data);
       } catch (err) {
-        setError('No se pudieron cargar los productos. ¿Está corriendo el backend?');
+        setError('No hay productos en esta categoría.');
         console.error(err);
       } finally {
         setLoading(false);
